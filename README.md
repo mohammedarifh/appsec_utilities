@@ -7,8 +7,8 @@
 *`python ./bulkJSONescaper.py --help`<br>*
 *`python ./bulkJSONescaper.py payloads.txt --output escaped_payloads.txt`*
 
-*__[aes128-ECBCrypt.py](./aes128-ECBCrypt.py)__ - Decrypt-Encrypt Tool for HTTP Body Encrypted with AES-128 in ECB Mode and Base64 Encoding.
-This tool is useful for penetration testers when the HTTP body is encrypted using AES-128 in ECB mode and then encoded in Base64. In such scenarios, this script provides a convenient method to decrypt the data in the HTTP body, inject payloads, encrypt it again, and send it to the application server using the relevant key. Compared to online tools, this method is risk-free.* <br> 
+*__[aes128-ECBCrypt.py](./aes128-ECBCrypt.py)__ - Decrypt-Encrypt Tool for HTTP Body Encrypted with AES-128 in ECB Mode and Base64 Encoding.<br>
+This tool is useful for penetration testers when the HTTP body is encrypted using AES-128 in ECB mode and then encoded in Base64. In such scenarios, this script provides a convenient method to decrypt the data in the HTTP body, then reviewer can inject payloads, encrypt it again, and send it to the application server using the relevant key (16 bytes/characters). Compared to online tools, this method is risk-free.* <br>
 
 *[Key]: In many cases, when developers implement encryption for the HTTP body, they may hardcode the encryption key in client-side scripts, such as JavaScript within the application itself. Investing some time in inspecting the .js file is often worthwhile to retrieve the key needed to successfully encrypt or decrypt the data.* <br>
 ***Dependencies** - `pip3 install pycryptodome`*<br>
